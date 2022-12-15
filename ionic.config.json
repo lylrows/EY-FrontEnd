@@ -1,0 +1,7 @@
+{
+  "name": "EY-FrontEnd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
