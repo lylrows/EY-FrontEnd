@@ -1,0 +1,33 @@
+
+
+<div class="container">
+  <div class="tittle">
+    <img src="../../assets/img/enfermera.png" alt="">
+    <p>Sign In to EnfermeraYa</p>
+  </div>
+  <!-- action="" method="post" -->
+  <form [formGroup]="formLogin" (ngSubmit)="signIn()">
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input type="email" matInput formControlName="email"
+             placeholder="pat@example.com">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput formControlName="password"
+             placeholder="password">
+    </mat-form-field>
+    <button type="submit" mat-raised-button color="primary" [disabled]="formLogin.invalid">Sign In</button>
+  </form>
+  <div class="footer">
+    <p>or Sign In with...</p>
+    <ion-button color="danger">
+      <ion-icon slot="start" name="logo-google"></ion-icon>
+      Google
+    </ion-button>
+    <ion-button>
+      <ion-icon slot="start" name="logo-facebook"></ion-icon>
+      Facebook
+    </ion-button>
+  </div>
+</div>

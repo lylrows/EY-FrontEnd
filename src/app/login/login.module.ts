@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { IonicModule } from '@ionic/angular';
 
+import { LoginPageRoutingModule } from './login-routing.module';
+
+import { LoginPage } from './login.page';
 import { AppMaterialModule } from '../app-material.module';
 
 @NgModule({
@@ -13,9 +14,9 @@ import { AppMaterialModule } from '../app-material.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule,
+    LoginPageRoutingModule,
     AppMaterialModule
   ],
-  declarations: [HomePage]
+  declarations: [LoginPage]
 })
-export class HomePageModule {}
+export class LoginPageModule {}
